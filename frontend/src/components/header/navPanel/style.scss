@@ -1,0 +1,62 @@
+nav {
+    ul {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin: top center;
+        top: 50px;
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 10px;
+        padding: 10px 0px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+        background-color: white;
+        min-width: 150px;
+
+        li {
+            padding: 5px 10px;
+            background: linear-gradient(to right, #fff 50%, #efefef 50%);
+            background-size: 200% 100%;
+            transition: background-position 0.3s ease-out;
+
+            &:hover {
+                background-position: -100% 0;
+                cursor: pointer;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #000;
+
+                i {
+                    width: 16px;
+                }
+            }
+        }
+
+        .separation {
+            border-top: 1px solid #000;
+            transition: none;
+            padding: 0;
+
+            &:hover {
+                cursor: default;
+            }
+        }
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}

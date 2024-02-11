@@ -1,0 +1,478 @@
+[
+    {
+        "id": "5254433c-a34e-4f16-ab6a-4c319e43e7ff",
+        "blogNumber": 3,
+        "blogType": "Article",
+        "title": "Until the dream of the first game came true (the following).",
+        "description": "In Part I, I told you where the idea for The Big One came from, and how development began. In Part II, I'm going to tell you all about how players reacted to the beta, and the additions that were made as a result. You'll also discover the unexpected turn the project took, with the aim of releasing the game on Steam.",
+        "date": "01/01/2000",
+        "writer": "Julien",
+        "body": [
+            {
+                "type": "block",
+                "content": [
+                    "In Part I, I told you where the idea for The Big One came from, and how development began. In Part II, I'm going to tell you all about how players reacted to the beta, and the additions that were made as a result. You'll also discover the unexpected turn the project took, with the aim of releasing the game on Steam."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "🎮Arrival at the first beta."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "Here it is! My first game! I'm on the verge of fulfilling my greatest dream! Obviously, this dream goes much further than a simple beta of a game that only a few people will have played, but this is the beginning of this great adventure! I can't wait to get the first feedback, and I'm thrilled at the idea of people playing my game.",
+                    "After the excitement and pride, it's time to question ourselves and figure out what's wrong with the game.",
+                    "Firstly, the feedback is unanimous: the game is HARD! Extremely hard, if not impossible! Very good. We'll have to spend a lot of time on this part of the game.",
+                    "Secondly, the game at that time was only playable on the keyboard. I had intended to create a controller adaptation, but this would be tedious to develop, so I didn't want to dwell on it for the time being. It was clear that I was going to have to take this time, as keyboard playability was very complicated.",
+                    "On the difficulty front, I started by reducing monster damage. I then increased the player's hit points, boosted certain items, redesigned certain rooms, added a potion for healing in combat and a whole host of other small changes.",
+                    "The biggest addition has been passive skills. When you kill monsters, you recover experience as well as money. Once back in the main HUB, we can spend our points to buy skills via a table. Increased damage or even life, more potions, armor and much more.",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "Competence table in TBO",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "Competence table in TBO"
+                    },
+                    "The aim of this is to provide the player with a stronger statistical base before even entering a game. This allows the player to play while learning how to fight the various monsters, and then return to purchase the items needed to beat them more easily.",
+                    "The last idea I had for making TBO even more progressive came from a fabulous game: Hades.",
+                    "In Hades, once you've reached the end game, you unlock a table in which you can choose to activate options that will increase the difficulty level of your games. I've simply adopted the same principle for TBO.",
+                    "We can increase the difficulty of our games via a total of some thirty options, and if we complete a game, the current level of the game becomes our record. By achieving certain records, new difficulties are unlocked, allowing you to go even further in your suffering.",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "TBO simulation table",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "TBO simulation table"
+                    },
+                    "Well, all these ideas are pretty good, and after developing them, I thought the game was finished. I was going to move on to another game, but then I thought, \"Why not release the game on Steam?\""
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "😲An unexpected twist!"
+            },
+            {
+                "type": "block",
+                "content": [
+                    "A rather far-fetched idea, don't you think? My very first game, released on Steam. Normally, a first game never leaves your computer! You have to wait until you've made several of them before you get a decent result. And yet, looking at TBO, I thought it would certainly be possible to make a decent game out of it.",
+                    "In terms of content, the game is passable. Its difficulty makes it very hard to finish, and the advantage of rogue like is infinite replayability.",
+                    "To make it a real game, it needs a major visual polish. It needs better graphics! Lighting effects and an end boss.",
+                    "As far as the graphics are concerned, I first worked on an ambient light system to accentuate the cavernous aspect of the game. You can only see clearly if you're close to a torch, and the shadowy areas increase the player's vigilance to avoid being surprised by a monster hiding there.",
+                    "Then I tackled the rooms themselves. I wanted to have rooms filled with sets. In terms of budget, this was impossible. I had to limit myself. So I came up with the idea of decorating all the rooms with NPCs.",
+                    "Each of them has a theme linked to the NPC and the items it gives. So why not decorate the room too?",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "Image of several decorated rooms in TBO",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "Image of several decorated rooms in TBO"
+                    },
+                    "To complete the game a little more, I thought it would be nice to have a minimum of lore. I asked a friend who likes to write stories to develop a lore for me around a simple axis. Machines dominate the world. They have enslaved human beings and are using them for testing. Yes, there's a big Portal vibe! I'll let you play the game to discover all its subtleties.",
+                    "To complete the game, a boss had to be created. I won't go into too much detail about this monster, as it's bound to leave a few surprises, but I guarantee you'll spend a lot of time there!",
+                    "The final addition will be a gameplay mechanic. In the game, we spend our time attacking enemies. We do it without really knowing how. I thought having weapons, each with a unique power, would be nice and would add even more depth to the gameplay strategy. Weapons would have a normal and an epic mode, which would further increase the bonus they provide.",
+                    "Okay, now that all that's ready, all we have to do is prepare for the release of The Big One."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "🏁The Big One V1.0"
+            },
+            {
+                "type": "block",
+                "content": [
+                    "We're almost there. Just a few more weeks and my first game will be online! This last part isn't very interesting in terms of development, since it's mostly administrative.",
+                    "Setting up a company, registering on Steam, providing bank and tax information. I'm bored out of my skull with all this, but you have to go through it if you want to become a real game developer.",
+                    "To get your game online, and especially on Steam, it's important to add achievements. Achievements are a good way to attract players to your game, and to encourage them to play it and try to build up a complete collection. In all, the game has 70 achievements, some of which are truly impossible, while others can be unlocked very quickly.",
+                    "After that, a few final tweaks to the game, the final touches to the store page and the uploading of the game archive for players to download.",
+                    "All we can do now is wait for the game to be released, and hope that it will break through a little and bring this year-long project and crazy adventure to a close! The rest is history.",
+                    "This concludes my blog on The Big One adventure. I hope you enjoyed reading about its creation, and that it inspired you to create your own game.",
+                    "See you in the next blog. Ciao."
+                ]
+            }
+        ]
+    },
+    {
+        "id": "81b24230-a120-43a4-940c-f05031f8d955",
+        "blogNumber": 2,
+        "blogType": "Article",
+        "title": "Until the dream of the first game came true.",
+        "description": "Realizing your dreams is the best thing in life! This is the goal I set myself day after day, and my greatest dream has always been to develop video games. Today I'm going to tell you about the incredible adventure of designing my first video game: The Big One.",
+        "date": "01/01/2000",
+        "writer": "Julien",
+        "body": [
+            {
+                "type": "block",
+                "content": [
+                    "Realizing your dreams is the best thing in life! This is the goal I set myself day after day, and my greatest dream has always been to develop video games. Today I'm going to tell you about the incredible adventure of designing my first video game: The Big One.",
+                    "From the genesis of the idea in 2016 to the project's resumption in 2022, and every milestone in its development, you'll find out EVERYTHING in this blog!",
+                    "Without further ado, let's take a step back in time to early 2016, when the young man I was was just starting out with his first games."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "📆The Big One, an idea with a long history!"
+            },
+            {
+                "type": "block",
+                "content": [
+                    "I've always been a fan of difficult games. Spending hours doing the same move over and over again, just to get it right, is normal for me. I know, I'm weird! But many gamers are like me, and there are plenty of games based on this principle.",
+                    "I was watching a movie one day and one scene in particular inspired me: a hacker, at home, helping criminals. This gave me the idea of making a game in which you'd play a hacker in his bedroom, helping strangers commit crimes in the form of a contract that you'd accept, with the aim of pulling off the biggest bank robbery in history, called \"The Big One\". The lore is simple and effective. Let's move on to the gameplay.",
+                    "In this film, the hacker writes very fast without ever looking at his keyboard and does dozens of things extremely quickly. This scene reminded me of the Cook Serve & Delicious game I was playing at the same time, where the aim was to prepare orders for customers. To do this, you had to press a series of keys in a very precise order, and if you messed up, you'd get a penalty.",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "Cook Serve & Delicious game",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "Cook Serve & Delicious game"
+                    },
+                    "Now that the game has lore and gameplay, it's time to start developing the idea.",
+                    "At that time, I didn't know how to develop video games. I didn't know how to use Unity or any other software of that kind, and I didn't know how to develop in C# or any other language. The only thing I knew how to use was Photoshop. So I opened it up and started modeling the first assets.",
+                    "Alongside this, I also started writing a little more lore. The game was divided into days during which activities were carried out under the cover of a unique quest each day. So we had to write around ten quests then a big final quest which was the heist.",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "Image of the former The Big One",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "Image of the former The Big One"
+                    },
+                    "That's about it. That's about it. The principle was simple, but pretty cool. I developed the idea over the next year or so, until I finally tucked it away in a cupboard for good. Or so I thought..."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "💻The beginnings of development."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "We teleport years later to February 2022. At this point I'm still learning Unity and C#, when I get the idea of making my first little game from scratch.",
+                    "At the time, I was taking a course (available in the blog \"How did I learn to make video games?\") on learning 2D games. I got the urge to develop a simple platform game, with a few monsters and life points. Nothing extravagant, and above all a game that would take me a few weeks to complete at most. So I set about buying my first assets to dress up the game a little.",
+                    "Soon enough, the idea of The Big One that I'd had several years earlier came back into my head. I started thinking, \"What if I combined the gameplay principle of The Big One with a platform game?\" From there, I set about creating the movement system and then the combat system.",
+                    "I really liked the basic idea, so I kept it as is. The principle is simple: a monster is in front of us, we press a key to launch the activity (the sequence of keys to perform), then we press the keys that appear on the screen in the order indicated, then if we've done this correctly the monster takes damage. Repeat this action until you've defeated the monster, then move on to the next step.",
+                    "The difficulty of the game lay in the series of strokes to be performed. I could do short series of around three touches, but also much longer series of up to six or even seven touches.",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "Image of a activitie launched in TBO",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "Image of a activitie launched in TBO"
+                    },
+                    "With the basic gameplay set, we now need to get the monsters to attack us. Yes, it's not very interesting to fight monsters that can't attack you in turn.",
+                    "While doing some research on the web, I came across an artist called RGSDev. At the time, this person had already created a number of small monsters that were perfectly suited to my game. So I bought a few from him and went back to Unity to develop the AIs.",
+                    "The first monster I made was very simple! A bat which, when you enter its detection circle, starts chasing you relentlessly. If it hits you, you take damage.",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "Bat in TBO chasing the player",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "Bat in TBO chasing the player"
+                    },
+                    "After that, I continued to develop other monsters with other behaviors. My aim was to define a monster by its attack. When the player encountered a certain monster, he would immediately know how to dodge it.",
+                    "That's all great, but now we're going to have to create a goal for this game!"
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "👌A rogue-like touch..."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "My favorite style of game is rogue-like! Emptying rooms full of monsters, picking up items to become even stronger, dying over and over again and starting again to go further and further... The principle is so simple and yet so enjoyable! When you succeed in beating that boss who has tormented you far too many times, you feel such a sense of accomplishment! You continue your adventure feeling invincible, and then you die facing the first monster on the next floor, because it's even tougher than the boss you've just faced!",
+                    "I thought this style of game would fit in perfectly with The Big One. I own monsters, and I have to kill them to clear rooms and move on to the next one. All you need to do is collect items to make the player stronger, and you're done!",
+                    "In roguelike games, there's also a fundamental principle that every time you complete an objective in the game, you unlock something. Whether it's a new weapon, a new item, a new character, it doesn't matter. At that point in development, I had no idea that my game would turn out to be so incredible, so I hadn't thought about incorporating this principle into TBO.",
+                    "So I set myself the idea of developing items that could be picked up in special rooms, each of which would have a particular theme linked to the item. I already had a few ideas in mind, such as an alchemy room, a forge, a tavern or even a church.",
+                    "After several weeks of brainstorming, I ended up with a small pool of about 20 items, each one crazier than the last! They'll be donated by eight different NPCs, each with their own theme:",
+                    {
+                        "subtype": "list",
+                        "subcontent": [
+                            "The alchemist",
+                            "The bard",
+                            "The blacksmith",
+                            "The chef",
+                            "The farmer",
+                            "The minor",
+                            "The priest",
+                            "The merchant"
+                        ]
+                    },
+                    "These NPCs will be located in a room that will appear randomly throughout a game. In total, you could encounter between three and six NPCs in a single game.",
+                    "That's all great, but what if the player is unlucky and encounters very few NPCs, and on top of that, the items offered to him are some of the crappiest around, how do you make him a bit strong anyway? Yes, that's it! Stats increases!",
+                    "Each time the player clears a room, he'll have a percentage chance of getting a stat increase from one of two choices. If, unfortunately, he's unlucky, the percentage rate will increase. At the next room, he'll have a better chance of getting a bonus. When he finally gets a bonus, the percentage rate returns to its initial value.",
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "TBO board stats",
+                        "width": "",
+                        "height": "",
+                        "figcaption": "TBO board stats"
+                    },
+                    "As with the items, I spend a few weeks coming up with ideas to make the stats pool interesting. I then arrange them in categories with a percentage of stats in a particular category, and that's it!",
+                    "Phew! That's already a wealth of content. All that's left is to test the game with the public. For this, I called on a few of my friends and family to act as beta testers.",
+                    "As this blog is already quite long, I'll see you very soon for the second part!"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "8191588b-9709-4395-bb7a-65d40ced331e",
+        "blogNumber": 1,
+        "blogType": "Article",
+        "title": "How did I learn to make video games?",
+        "description": "Do you dream of making your own video games? Would you like to learn how to code or use software such as Unity, but don't know where to start? Then you've come to the right place! In this blog I'm going to detail my learning path with all the useful links I followed to become a video game developer.",
+        "date": "01/01/2000",
+        "writer": "Julien",
+        "body": [
+            {
+                "type": "block",
+                "content": [
+                    "Do you dream of making your own video games? Would you like to learn how to code or use software such as Unity, but don't know where to start?",
+                    "Then you've come to the right place! In this blog I'm going to detail my learning path with all the useful links I followed to become a video game developer."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "🚫Small disclaimer."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "First of all, I'd like to make it clear that this article does not define a perfect path to becoming a video game developer.",
+                    "I'll tell you about my journey, how I got there and the tools I used, but it's clear that this isn't the only way to get there.",
+                    "Everyone will have their own learning style. Some will prefer videos, others written courses and the craziest will try to learn on their own.",
+                    "I don't want you to take everything in this blog at face value. This method worked for me, but it may not work for you.",
+                    "With that out of the way, let's get down to business!"
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "✅Find the right courses."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "When it comes to searching for courses on how to learn development, it's very easy to find hundreds of them very quickly. The real question is \"Will I learn to make video games with these courses?\".",
+                    "The answer is simple: no! Learning to make video games isn't just a matter of 10-minute tutorials. It's true that there are videos that teach you how to create small games very quickly. They give you an insight into the software and languages used, but they should be seen as a brief introduction to a much more complex world.",
+                    "Everyone will have their own learning style. Some will prefer videos, others written courses and the craziest will try to learn on their own.",
+                    "It's perfectly possible to stop at this kind of content. I'm not criticizing these videos or the people who watch them! They're necessary to popularize this profession and enable the average person to understand how it all works, and perhaps to become interested in it.",
+                    "If you're more curious and would like to see your ideas come to life, then you're going to have to go further than that. A lot further!"
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "🤔Choosing the right branch is essential."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "There are many different professions involved in developing video games. In fact, the term \"game developer\" doesn't really mean anything. You'll find programmers, 3D designers, illustrators, musicians, project managers, testers and many others I'm forgetting.",
+                    "In all this mess, you have to find what really attracts you. That job you get up in the morning and feel passionate about. That job that makes you feel like you're not working.",
+                    "Personally, my thinking was very simple. As I already explained in the first blog \"Welcome to the Salty Karma family!\", I wanted to bring my ideas to life. I didn't care whether my game looked good or sounded good. For me, the important thing was to play! So, my decision turned toprogramming.",
+                    "Now it's up to you to find your branch. Some of you may already have made up your minds. Others may have been convinced by my convincing arguments!",
+                    "For the rest of you, I'd advise you to think about what you like about video games. Ask yourself the right questions and try to relate what you like in your life to the jobs available in the video game industry."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "💰Udemy, a goldmine for learning."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "Now that you've decided (more or less) on the job you like, it's time to start learning!",
+                    "Of course, Youtube is the first place you should go! There are plenty of skilled youtubers who will teach you how to use the tools to achieve what you want.",
+                    "The other option is to turn to paid courses. Of course, you'll have to put your hand in your pocket, and I know that some people will be reluctant, but I assure you that the quality will be far superior.",
+                    "The number one site for selling online courses is Udemy. You'll find a multitude of courses, in many languages, in many fields. For an average of 15 euros, you'll have access to hours of video lessons, often with resources forsimultaneous practice.",
+                    "Feel free to browse the site for courses in the areas you love."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "📝Which course did I take?"
+            },
+            {
+                "type": "block",
+                "content": [
+                    "For those of you who'd like to learn programming, here's a non-exhaustive list of some of the quality courses I've taken.",
+                    "Please note! These courses only cover Unity software and the C# language. If you don't want to develop your own games with these tools, this list will be of little use to you:",
+                    {
+                        "subtype": "list",
+                        "subcontent": [
+                            {
+                                "link": "Complete C# Unity Game Developer 3D",
+                                "href": "https://www.udemy.com/course/unitycourse2/"
+                            },
+                            {
+                                "link": "Complete C# Unity Game Developer 2D",
+                                "href": "https://www.udemy.com/course/unitycourse/"
+                            },
+                            {
+                                "link": "RPG Core Combat Creator: Learn Intermediate Unity C# Coding",
+                                "href": "https://www.udemy.com/course/unityrpg/"
+                            },
+                            {
+                                "link": "Unity Dialogue & Quests: Intermediate C# Game Coding",
+                                "href": "https://www.udemy.com/course/unity-dialogue-quests/"
+                            },
+                            {
+                                "link": "Unity RPG Inventory Systems Asset Pack: Behind The Scenes",
+                                "href": "https://www.udemy.com/course/unityinventory/"
+                            },
+                            {
+                                "link": "RPG Shops & Abilities: Intermediate C# Game Coding",
+                                "href": "https://www.udemy.com/course/rpg-shops-abilities/"
+                            }
+                        ]
+                    },
+                    "Other very interesting courses on 3D modeling and pixel art:",
+                    {
+                        "subtype": "list",
+                        "subcontent": [
+                            {
+                                "link": "The Blender 2.8 Encyclopedia",
+                                "href": "https://www.udemy.com/course/the-blender-encyclopedia/"
+                            },
+                            {
+                                "link": "Complete Blender Creator: Learn 3D Modeling for beginners",
+                                "href": "https://www.udemy.com/course/blendertutorial/"
+                            },
+                            {
+                                "link": "Creating 3D environments in Blender",
+                                "href": "https://www.udemy.com/course/blender-environments/"
+                            },
+                            {
+                                "link": "Pixel Art Fundamentals: Introduction to 3D Game Pixel Art",
+                                "href": "https://www.udemy.com/course/pixel-art-fundamentals/"
+                            },
+                            {
+                                "link": "Pixel Art Characters: 2D Character Design & Animation",
+                                "href": "https://www.udemy.com/course/pixel-art-characters/"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "💪Practice and practice some more!"
+            },
+            {
+                "type": "block",
+                "content": [
+                    "Now that you've got everything you need, all you have to do is put your heart and soul into it! Find an organization that suits you, and off you go!",
+                    "Some people prefer to plan ahead, while others do it without getting too organized. The important thing is to practice every day, and especially to practice outside the classes you're taking. Try to do more than you're taught. Dig deep in your mind to go further and further. This will teach you to conceptualize your games and will come in very handy later on in your own projects.",
+                    "I wish you all a great learning experience and look forward to seeing you in a future blog!"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "fae8e46f-18e8-4631-a860-ed3eec72d52d",
+        "blogNumber": 0,
+        "blogType": "News",
+        "title": "Welcome to the Salty Karma family!",
+        "description": "It's finally here! The official website of the Salty Karma studio, where you'll regularly find blogs on a variety of subjects, including DevBlogs on the studio's next project, to be announced very soon! To celebrate with you, I'd like to take a look back at the genesis of the studio, right up to its creation and the release of its first game: The Big One.",
+        "date": "01/01/2000",
+        "writer": "Julien",
+        "body": [
+            {
+                "type": "block",
+                "content": [
+                    "It's finally here! The official website of the Salty Karma studio, where you'll regularly find blogs on a variety of subjects, including DevBlogs on the studio's next project, to be announced very soon!",
+                    "To celebrate with you, I'd like to take a look back at the genesis of the studio, right up to its creation and the release of its first game: The Big One"
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "👶Salty Karma, a child's dream!"
+            },
+            {
+                "type": "block",
+                "content": [
+                    "Before I get started, I'd like to take you back in time to the mid-2000s, when the developer I am today was just a kid.",
+                    "When you were ten, do you remember your answer to the question \"What do you want to be when you grow up?\" For me, it was already very clear. Without even knowing what it meant, and with all the insouciance of a child of that age, I was quick to answer \"Video game developer!\".",
+                    "Beyond developing video games, my ultimate dream was to one day have my own studio, with my own employees, and create a great working atmosphere while building the games of tomorrow.",
+                    "Well... All this obviously takes time, and the steps have to be climbed one by one. So, as I continued to grow and reach my teens, it was time to really start this adventure!"
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "❓What will my domain be?"
+            },
+            {
+                "type": "block",
+                "content": [
+                    "When people talk about \"developing video games\", nobody really knows what that means. We see people doing code, others drawing and even making music. So many jobs can't be done by just one person. So I had to make a choice.",
+                    "As far as I'm concerned, I thought quickly. In the term \"video game\" there's the word \"game\". And \"game\" means \"gameplay\". And gameplay means programming. End of thought.",
+                    "Obviously, this choice was a little more complicated (just a little), but it was clear to me that playing ugly, soundless games was more interesting than having sketches and hoping to see them move.",
+                    "Now that I'm sure of everything, it's time to learn. And yes! The little guys aren't going to move on their own."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "📚A tedious apprenticeship."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "So how do you learn to make video games? The Internet! So I set off in search of information and quickly came across various videos, blogs and paid courses, all promising wonders.",
+                    "One thing you should know: no course will actually teach you how to make video games! You'll get the basics right, but practice is the only way to go.",
+                    "For almost three years, I took daily classes and developed small projects to gain enough experience to launch my own business.",
+                    "I'll be detailing the various courses I've taken in a future blog, if you'd like to get a solid grounding in development too."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "🎮Until the dream of the first game came true."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "Learning is good, but creating is better! After a while, you just have to get started! Take the bull by the horns and click on \"Create Project\".",
+                    "In February 2022, I started my first project with the ambition of producing a \"drinkable\" game. The ambition was low, and I didn't think it would end up this way!",
+                    "I'll soon be blogging exclusively about The Big One's development adventure. I look forward to seeing you in this blog to learn more about this adventure."
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "👀Where does the studio's name come from?"
+            },
+            {
+                "type": "block",
+                "content": [
+                    {
+                        "subtype": "image",
+                        "src": "/src/assets/salty_karma_logo.webp",
+                        "alt": "Salty Karma logo",
+                        "width": "250",
+                        "height": "250",
+                        "figcaption": "First logo of Salty Karma"
+                    },
+                    "Do you also play competitive online games? Do you rage too? Are you salty?",
+                    "Do you also get calmed down when you think you're too good-looking? Do you get karma?",
+                    "If you meet all these criteria, then welcome to the Salty Karma familly! And if not, welcome anyway!"
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "💬Last words."
+            },
+            {
+                "type": "block",
+                "content": [
+                    "This adventure is already well underway, but it's only just beginning! A second game is already on the drawing board, and I'll be telling you all about it very soon.",
+                    "In the meantime, don't hesitate to discover The Big One on Steam, join the Discord and share all this with those around you, because this adventure is also yours!",
+                    "Believe in yourself, believe in your dreams and work to achieve your goals, because there's nothing more beautiful than living your passion!"
+                ]
+            }
+        ]
+    }
+]

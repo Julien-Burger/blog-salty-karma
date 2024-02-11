@@ -1,0 +1,80 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+    padding: 15px 0px;
+    border-top: 1px solid white;
+    background-color: black;
+    width: 100%;
+
+    div {
+        display: flex;
+        gap: 10px;
+        height: 38px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid white;
+            padding: 10px 15px;
+            border-radius: 40px;
+            transition: all 0.3s;
+            gap: 5px;
+            width: 20px;
+            font-weight: bold;
+
+            &:hover {
+                background-color: white;
+                width: fit-content;
+
+                i {
+                    color: black;
+                }
+
+                span {
+                    display: inline;
+                }
+            }
+
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                color: white;
+            }
+
+            span {
+                display: none;
+                font-size: 14px;
+                color: black;
+            }
+        }
+
+        .steamLink:hover,
+        .twitterLink:hover {
+            width: 60px;
+        }
+
+        .youtubeLink:hover {
+            width: 75px;
+        }
+
+        .discordLink:hover {
+            width: 69px;
+        }
+
+        .instagramLink:hover {
+            width: 83px;
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 14px;
+    }
+}
