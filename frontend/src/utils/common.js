@@ -5,7 +5,7 @@ import i18next from "../app/i18n";
  * @param {string} date The date you want to compare. Format: DD/MM/YYYY
  * @returns Info about the difference between the two date
  */
-export function getDateSince(date) {
+export const getDateSince = (date) => {
     let actualDate = new Date();
     let otherDate = new Date(refactorDate(date));
 
@@ -18,33 +18,37 @@ export function getDateSince(date) {
     } else if (differenceInDays < 2) {
         return i18next.t("yesterday", { ns: "blogs" });
     } else if (differenceInDays < 30) {
-        return `${Math.trunc(differenceInDays)} ${i18next.t("daysAgo")}`;
+        return `${Math.trunc(differenceInDays)} ${i18next.t("daysAgo", { ns: "blogs" })}`;
     } else if (differenceInDays < 365) {
         let months = Math.trunc(differenceInDays / 30);
 
         if (months > 1) {
-            return `${months} ${i18next.t("monthsAgo")}`;
+            return `${months} ${i18next.t("monthsAgo", { ns: "blogs" })}`;
         } else {
-            return `${months} ${i18next.t("monthAgo")}`;
+            return `${months} ${i18next.t("monthAgo", { ns: "blogs" })}`;
         }
     } else {
         let years = Math.trunc(differenceInDays / 365);
 
         if (years > 1) {
-            return `${years} ${i18next.t("yearsAgo")}`;
+            return `${years} ${i18next.t("yearsAgo", { ns: "blogs" })}`;
         } else {
-            return `${years} ${i18next.t("yearAgo")}`;
+            return `${years} ${i18next.t("yearAgo", { ns: "blogs" })}`;
         }
     }
-}
+};
 
 /**
  * Convert an US date format to an european date format
  * @param {string} date The date to convert. Format: MM/DD/YYYY
  * @returns The date converted to european format
  */
-export function refactorDate(date) {
+export const refactorDate = (date) => {
     let dateSplited = date.split("/");
 
     return `${dateSplited[1]}/${dateSplited[0]}/${dateSplited[2]}`;
-}
+};
+
+export const generateUniqueId = () => {
+    return Math.floor(Math.random() * 10000);
+};

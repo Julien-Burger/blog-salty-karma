@@ -41,12 +41,12 @@ function Header() {
     return (
         <header style={y > 0 ? { borderBottom: "1px solid rgb(219 219 219)" } : {}}>
             <div className="innerHeader">
-                <div className="saltyKarma">
+                <a href="https://www.saltykarma.com" className="saltyKarma">
                     <img className="saltyKarmaLogo" src={saltyKarmaLogo} alt="Salty Karma logo" />
                     <h1>
                         <span>Salty</span> Karma
                     </h1>
-                </div>
+                </a>
 
                 <div
                     className={y > 0 ? "backUp backupShow" : "backUp"}
@@ -59,12 +59,12 @@ function Header() {
                 <div className="rightContent">
                     <button className="languageContainer" onClick={handleClickSwitchLanguage}>
                         <i className="fa-solid fa-globe"></i>
-                        {i18n.language == "fr" ? <span>Français</span> : <span>English</span>}
+                        {i18n.language.startsWith("fr") ? <span>Français</span> : <span>English</span>}
                     </button>
 
                     <div className="navPanelContainer" ref={navPanelRef}>
                         <i className="fa-solid fa-bars fa-lg sideBar" onClick={() => setShowNavPanel(!showNavPanel)}></i>
-                        <NavPanel showNavPanel={showNavPanel} setShowNavPanel={setShowNavPanel} />
+                        <NavPanel showNavPanel={showNavPanel} />
                     </div>
                 </div>
             </div>

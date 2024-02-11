@@ -2,12 +2,11 @@ import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 import dataEn from "../../data/blogsDataEn.json";
 import dataFr from "../../data/blogsDataFr.json";
 import "./style.scss";
 import julienChibi from "../../assets/julien_chibi.png";
+import { generateUniqueId } from "../../utils/common";
 
 function Blog() {
     const { id } = useParams();
@@ -75,7 +74,6 @@ function Blog() {
 
     return (
         <>
-            <Header />
             <section className="blog">
                 <div className="blogHeader">
                     <div>
@@ -105,15 +103,15 @@ function Blog() {
                     {blogData.body.map((element, index) => {
                         {
                             return element.type === "block" ? (
-                                <div className="block" key={index}>
-                                    {element.content.map((content) => {
+                                <div className="block" key={generateUniqueId()}>
+                                    {element.content.map((content, index) => {
                                         return typeof content === "string" ? (
-                                            <p>{content}</p>
+                                            <p key={generateUniqueId()}>{content}</p>
                                         ) : content.subtype === "list" ? (
-                                            <ul>
+                                            <ul key={generateUniqueId()}>
                                                 {content.subcontent.map((listElement) => {
                                                     return (
-                                                        <li>
+                                                        <li key={generateUniqueId()}>
                                                             {typeof listElement === "string" ? (
                                                                 listElement
                                                             ) : (
@@ -127,7 +125,7 @@ function Blog() {
                                             </ul>
                                         ) : (
                                             content.subtype === "image" && (
-                                                <figure>
+                                                <figure key={generateUniqueId()}>
                                                     <img
                                                         src={content.src}
                                                         alt={content.alt}
@@ -141,7 +139,7 @@ function Blog() {
                                     })}
                                 </div>
                             ) : (
-                                <h2 key={index}>{element.content}</h2>
+                                <h2 key={generateUniqueId()}>{element.content}</h2>
                             );
                         }
                     })}
@@ -171,7 +169,6 @@ function Blog() {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     );
 }

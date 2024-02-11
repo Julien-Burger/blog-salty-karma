@@ -12,7 +12,6 @@ function Home() {
 
     return (
         <>
-            <Header />
             <section className="blogs">
                 <div className="title">
                     <div></div>
@@ -51,7 +50,6 @@ function Home() {
                           })}
                 </section>
             </section>
-            <Footer />
         </>
     );
 }
