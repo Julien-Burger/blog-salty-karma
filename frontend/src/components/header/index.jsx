@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import saltyKarmaLogo from "../../assets/salty_karma_logo.png";
+import saltyKarmaLogo from "../../assets/salty_karma_logo.webp";
 import "./style.scss";
 import NavPanel from "./navPanel";
 import { useOutsideClick } from "../../utils/hooks";
