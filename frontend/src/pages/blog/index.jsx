@@ -6,6 +6,7 @@ import dataEn from "../../data/blogsDataEn.json";
 import dataFr from "../../data/blogsDataFr.json";
 import "./style.scss";
 import julienChibi from "../../assets/julien_chibi.png";
+import enzoChibi from "../../assets/enzo_chibi.png";
 import { generateUniqueId } from "../../utils/common";
 
 function Blog() {
@@ -94,7 +95,7 @@ function Blog() {
                         {blogData.writer == "Julien" ? (
                             <img src={julienChibi} alt="Julien chibi" />
                         ) : (
-                            <img src={julienChibi} alt="Enzo chibi" />
+                            <img src={enzoChibi} alt="Enzo chibi" />
                         )}
                     </div>
                 </div>
