@@ -50,7 +50,7 @@ function Footer() {
                     target="_blank"
                     aria-label="Follow us on Instagram"
                 >
-                    <i className="fa-brands fa-instagram fa-lg"></i>
+                    <i className="fa-brands fa-instagram"></i>
                     <span>Instagram</span>
                 </a>
             </div>

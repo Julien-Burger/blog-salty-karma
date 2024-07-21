@@ -37,7 +37,7 @@ function NavPanel({ showNavPanel }) {
                 </li>
                 <li>
                     <a href="https://www.instagram.com/salty_karma_studio/" target="_blank" aria-label="Follow us on Instagram">
-                        <i className="fa-brands fa-instagram fa-lg"></i>Instagram
+                        <i className="fa-brands fa-instagram"></i>Instagram
                     </a>
                 </li>
             </ul>
