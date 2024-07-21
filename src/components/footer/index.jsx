@@ -36,19 +36,19 @@ function Footer() {
                     <span>Discord</span>
                 </a>
                 <a
-                    className="twitterLink"
-                    href="https://twitter.com/Salty_Julien"
+                    className="tiktokLink"
+                    href="https://www.tiktok.com/@salty_karma"
                     target="_blank"
-                    aria-label="Follow me on Twitter"
+                    aria-label="Follow us on TikTok"
                 >
-                    <i className="fa-brands fa-twitter"></i>
-                    <span>Twitter</span>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
                 </a>
                 <a
                     className="instagramLink"
                     href="https://www.instagram.com/salty_karma_studio/"
                     target="_blank"
-                    aria-label="Follow me on Instagram"
+                    aria-label="Follow us on Instagram"
                 >
                     <i className="fa-brands fa-instagram fa-lg"></i>
                     <span>Instagram</span>
