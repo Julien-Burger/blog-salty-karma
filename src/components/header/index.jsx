@@ -41,11 +41,11 @@ function Header() {
     return (
         <header style={y > 0 ? { borderBottom: "1px solid rgb(219 219 219)" } : {}}>
             <div className="innerHeader">
-                <a href="https://www.saltykarma.com" className="saltyKarma">
+                <a href="https://blog.saltykarma.com" className="saltyKarma">
                     <img className="saltyKarmaLogo" src={saltyKarmaLogo} alt="Salty Karma logo" />
-                    <h1>
+                    <span>
                         <span>Salty</span> Karma
-                    </h1>
+                    </span>
                 </a>
 
                 <div

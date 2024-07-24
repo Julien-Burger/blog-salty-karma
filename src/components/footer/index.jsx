@@ -41,7 +41,7 @@ function Footer() {
                     target="_blank"
                     aria-label="Follow us on TikTok"
                 >
-                    <i class="fa-brands fa-tiktok"></i>
+                    <i className="fa-brands fa-tiktok"></i>
                     <span>TikTok</span>
                 </a>
                 <a

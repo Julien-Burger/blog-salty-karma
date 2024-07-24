@@ -32,7 +32,7 @@ function NavPanel({ showNavPanel }) {
                 </li>
                 <li>
                     <a href="https://www.tiktok.com/@salty_karma" target="_blank" aria-label="Follow us on TikTok">
-                        <i class="fa-brands fa-tiktok"></i>TikTok
+                        <i className="fa-brands fa-tiktok"></i>TikTok
                     </a>
                 </li>
                 <li>
