@@ -4,13 +4,12 @@ article {
     align-items: center;
     align-self: center;
     background-color: white;
-    width: 85%;
     height: fit-content;
     gap: 20px;
     border-radius: 15px;
     padding: 30px;
     border: 1px solid rgb(194, 194, 194);
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     outline: 3px solid rgba(0, 0, 0, 0);
     transition: all 0.3s;
 
@@ -80,5 +79,17 @@ article {
         font-size: 18px;
         letter-spacing: 2px;
         line-height: 23px;
+    }
+
+    @media (max-width: 700px) {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 0;
+
+        &:hover {
+            outline: none;
+            border-color: rgb(194, 194, 194);
+        }
     }
 }
