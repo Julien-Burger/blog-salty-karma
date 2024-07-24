@@ -1,25 +1,63 @@
 .blogs {
     display: flex;
     flex-direction: column;
-    width: 960px;
+    max-width: 960px;
     margin: auto;
-    padding-top: 120px;
+    padding-top: 100px;
     gap: 50px;
     margin-bottom: 50px;
     min-height: calc(100vh - 303px);
     font-family: "Dosis", sans-serif;
 
-    h1 {
-        font-size: 60px;
-        font-weight: bold;
-        text-shadow: 3px 6px RGBA(0, 0, 0, 1);
-        letter-spacing: 2px;
-        font-family: "Lato";
+    .title {
+        display: flex;
+        align-items: end;
+        gap: 5px;
+
+        div {
+            background-color: #000;
+            height: 40px;
+            margin-bottom: 6px;
+        }
+
+        div:first-of-type {
+            width: 15px;
+        }
+
+        div:nth-of-type(2) {
+            width: 8px;
+        }
+
+        div:last-of-type {
+            width: 5px;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-family: "Lato", sans-serif;
+            width: fit-content;
+        }
+
+        @media (max-width: 700px) {
+            justify-content: center;
+
+            div {
+                display: none;
+            }
+
+            h1 {
+                text-decoration: underline;
+            }
+        }
     }
 
     section {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        padding: 0 40px;
+
+        @media (max-width: 700px) {
+            padding: 0;
+        }
     }
 }

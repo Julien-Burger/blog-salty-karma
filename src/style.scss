@@ -44,36 +44,6 @@ body {
     min-height: 100vh;
 }
 
-.title {
-    display: flex;
-    align-items: end;
-    gap: 5px;
-
-    div {
-        background-color: #000;
-        height: 40px;
-        margin-bottom: 6px;
-    }
-
-    div:first-of-type {
-        width: 15px;
-    }
-
-    div:nth-of-type(2) {
-        width: 8px;
-    }
-
-    div:last-of-type {
-        width: 5px;
-    }
-
-    h2 {
-        font-size: 45px;
-        font-family: "Lato", sans-serif;
-        width: fit-content;
-    }
-}
-
 .swal-text {
     font-family: "Lato";
 }

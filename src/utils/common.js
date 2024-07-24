@@ -52,3 +52,21 @@ export const refactorDate = (date) => {
 export const generateUniqueId = () => {
     return Math.floor(Math.random() * 10000);
 };
+
+export const extractLinks = (string) => {
+    let parts = [];
+    let regex = /(<link>(.*?)<\/link>)|([^<]+)/g;
+    let match;
+
+    while ((match = regex.exec(string)) !== null) {
+        if (match[2]) {
+            // Texte à l'intérieur des balises <link>
+            parts.push({ text: match[2], isLink: true });
+        } else if (match[3]) {
+            // Texte en dehors des balises <link>
+            parts.push({ text: match[3], isLink: false });
+        }
+    }
+
+    return parts;
+};

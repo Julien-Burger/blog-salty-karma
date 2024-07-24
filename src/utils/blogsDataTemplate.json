@@ -1,0 +1,34 @@
+{
+    "id": "uuidv4",
+    "blogType": "Article || Devlog || News",
+    "title": "Titre du blog",
+    "description": "Courte description en ~300 caractères.",
+    "release_date": "JJ/MM/AAAA",
+    "writer": "Julien",
+    "body": [
+        {
+            "type": "block",
+            "content": [
+                "Le contenu ici.",
+                "Si je veux intégrer des <link>liens</link>, j'utilise les balises adéquat.",
+                {
+                    "subtype": "list",
+                    "subcontent": ["Une liste avec des choses à dire !", "<link>Avec des liens.</link>"]
+                },
+                {
+                    "subtype": "image",
+                    "src": "",
+                    "alt": "",
+                    "width": "",
+                    "height": "",
+                    "figcaption": ""
+                }
+            ]
+        },
+        {
+            "type": "h2",
+            "content": "Titre de paragraphe."
+        }
+    ],
+    "links": ["Les différents lien", "Dans l'ordre d'apparition des balises <link>"]
+}

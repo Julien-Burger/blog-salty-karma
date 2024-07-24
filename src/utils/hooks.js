@@ -1,4 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+import { API_ROUTES } from "./api.routes";
 
 /**
  * Hook on clicks outside of the passed ref
@@ -23,4 +26,40 @@ export const useOutsideClick = (ref, callback, dependencies = []) => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, [ref, ...dependencies]);
+};
+
+/**
+ * Get the current blog based on id and the next and previous blog
+ * @param {string} lng Language of the displayed blog
+ * @param {string} id
+ * @returns The current blog, previous and next
+ */
+export const useBlog = (lng, id) => {
+    const [blogs, setBlogs] = useState({});
+
+    useEffect(() => {
+        const getBlogs = async () => {
+            const {
+                data: { blog, previousBlog, nextBlog },
+            } = await axios.get(API_ROUTES.GET_BLOG, {
+                params: {
+                    id,
+                },
+            });
+
+            const data = {
+                blog,
+                previousBlog,
+                nextBlog,
+                isPreviousBlog: Object.keys(previousBlog).length > 0,
+                isNextBlog: Object.keys(nextBlog).length > 0,
+            };
+
+            setBlogs(data);
+        };
+
+        getBlogs();
+    }, []);
+
+    return blogs;
 };

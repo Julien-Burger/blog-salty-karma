@@ -146,7 +146,6 @@ strong {
         div {
             display: flex;
             justify-content: space-between;
-
             gap: 160px;
             padding: 30px;
 
@@ -154,21 +153,20 @@ strong {
                 display: flex;
                 flex: 1;
                 align-items: center;
-
                 gap: 5px;
                 color: #5865f2;
                 font-size: 18px;
                 font-weight: 600;
-            }
+                letter-spacing: 2px;
 
-            &:hover p {
-                text-decoration: underline;
-                text-underline-offset: 2px;
+                &:hover span {
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
             }
 
             .nextBlogContainer {
                 justify-content: end;
-                letter-spacing: 2px;
             }
 
             .previousBlog {

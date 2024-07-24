@@ -1,176 +1,154 @@
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
 
-import dataEn from "../../data/blogsDataEn.json";
-import dataFr from "../../data/blogsDataFr.json";
-import "./style.scss";
 import julienChibi from "../../assets/julien_chibi.webp";
 import enzoChibi from "../../assets/enzo_chibi.webp";
-import { generateUniqueId } from "../../utils/common";
+import { extractLinks, generateUniqueId } from "../../utils/common";
+import "./style.scss";
+import { useBlog } from "../../utils/hooks";
 
 function Blog() {
     const { id } = useParams();
     const { t, i18n } = useTranslation("blog");
-    let blogData;
-    let nextBlog;
-    let previousBlog;
+    const { blog, nextBlog, previousBlog, isPreviousBlog, isNextBlog } = useBlog(i18n.language, id);
+    let linkId = -1;
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    }, [id]);
-
-    if (i18n.language == "fr") {
-        blogData = dataFr.find((blog) => {
-            if (id == blog.id) {
-                return blog;
-            }
-        });
-
-        nextBlog = dataFr.find((blog) => {
-            if (blogData.blogNumber + 1 === dataFr.length) {
-                return undefined;
-            }
-            if (blog.blogNumber === blogData.blogNumber + 1) {
-                return blog;
-            }
-        });
-
-        previousBlog = dataFr.find((blog) => {
-            if (blogData.blogNumber - 1 === -1) {
-                return undefined;
-            }
-            if (blog.blogNumber === blogData.blogNumber - 1) {
-                return blog;
-            }
-        });
-    } else {
-        blogData = dataEn.find((blog) => {
-            if (id == blog.id) {
-                return blog;
-            }
-        });
-
-        nextBlog = dataEn.find((blog) => {
-            if (blogData.blogNumber + 1 === dataEn.length) {
-                return undefined;
-            }
-            if (blog.blogNumber === blogData.blogNumber + 1) {
-                return blog;
-            }
-        });
-
-        previousBlog = dataEn.find((blog) => {
-            if (blogData.blogNumber - 1 === -1) {
-                return undefined;
-            }
-            if (blog.blogNumber === blogData.blogNumber - 1) {
-                return blog;
-            }
-        });
-    }
+    if (!blog) return;
 
     return (
-        <>
-            <section className="blog">
-                <div className="blogHeader">
-                    <div>
-                        <span className="blogType">{blogData.blogType}</span>
+        <section className="blog">
+            <div className="blogHeader">
+                <div>
+                    <span className="blogType">{blog.blog_type}</span>
 
-                        <Link to="/">
-                            <p>{t("return")}</p>
-                            <i className="fa-solid fa-caret-right fa-xl"></i>
-                        </Link>
-                    </div>
-
-                    <h1>{blogData.title}</h1>
-
-                    <div>
-                        <span id={blogData.date} className="date">
-                            {blogData.date}
-                        </span>
-                        {blogData.writer == "Julien" ? (
-                            <img src={julienChibi} alt="Julien chibi" />
-                        ) : (
-                            <img src={enzoChibi} alt="Enzo chibi" />
-                        )}
-                    </div>
+                    <Link to="/">
+                        <p>{t("return")}</p>
+                        <i className="fa-solid fa-caret-right fa-xl"></i>
+                    </Link>
                 </div>
 
-                <div className="blogBody">
-                    {blogData.body.map((element, index) => {
-                        {
-                            return element.type === "block" ? (
-                                <div className="block" key={generateUniqueId()}>
-                                    {element.content.map((content, index) => {
-                                        return typeof content === "string" ? (
-                                            <p key={generateUniqueId()}>{content}</p>
-                                        ) : content.subtype === "list" ? (
-                                            <ul key={generateUniqueId()}>
-                                                {content.subcontent.map((listElement) => {
-                                                    return (
-                                                        <li key={generateUniqueId()}>
-                                                            {typeof listElement === "string" ? (
-                                                                listElement
-                                                            ) : (
-                                                                <a href={listElement.href} className="link" target="_blank">
-                                                                    {listElement.link}
-                                                                </a>
-                                                            )}
-                                                        </li>
-                                                    );
-                                                })}
-                                            </ul>
-                                        ) : (
-                                            content.subtype === "image" && (
-                                                <figure key={generateUniqueId()}>
-                                                    <img
-                                                        src={content.src}
-                                                        alt={content.alt}
-                                                        width={content.width}
-                                                        height={content.height}
-                                                    />
-                                                    <figcaption>{content.figcaption}</figcaption>
-                                                </figure>
-                                            )
-                                        );
-                                    })}
-                                </div>
-                            ) : (
-                                <h2 key={generateUniqueId()}>{element.content}</h2>
-                            );
-                        }
-                    })}
+                <h1>{blog.title}</h1>
 
-                    {blogData.writer == "Julien" ? (
-                        <p className="sign">-Julien, {t("founder")}.</p>
+                <div>
+                    <span id={blog.release_date} className="date">
+                        {blog.release_date}
+                    </span>
+                    {blog.writer === "Julien" ? (
+                        <img src={julienChibi} alt="Julien chibi" />
+                    ) : blog.writer === "Enzo" ? (
+                        <img src={enzoChibi} alt="Enzo chibi" />
                     ) : (
-                        <p className="sign">-Enzo, {t("founder")}.</p>
+                        <img src={julienChibi} alt="Enzo & Julien chibi" />
                     )}
                 </div>
+            </div>
 
-                <div className="blogFooter">
-                    <div>
-                        {previousBlog && (
-                            <Link to={`/blog/${previousBlog.id}`} className="previousBlogContainer">
-                                <i className="fa-solid fa-caret-left fa-xl"></i>
-                                <p className="previousBlog">{previousBlog.title}</p>
-                            </Link>
-                        )}
+            <div className="blogBody">
+                {blog.body.map((element) => {
+                    return element.type === "block" ? (
+                        <div className="block" key={generateUniqueId()}>
+                            {element.content.map((content) => {
+                                if (typeof content === "string") {
+                                    const parts = extractLinks(content);
 
-                        {nextBlog && (
-                            <Link to={`/blog/${nextBlog.id}`} className="nextBlogContainer">
-                                <p className={`nextBlog ${!previousBlog && "onlyOneBlog"}`}>{nextBlog.title}</p>
-                                <i className="fa-solid fa-caret-right fa-xl"></i>
-                            </Link>
-                        )}
-                    </div>
+                                    return (
+                                        <p key={generateUniqueId()}>
+                                            {parts.map((p) => {
+                                                if (p.isLink) {
+                                                    linkId++;
+                                                }
+                                                return p.isLink ? (
+                                                    <a
+                                                        key={generateUniqueId()}
+                                                        href={blog.links[linkId]}
+                                                        target="_blank"
+                                                        className="link"
+                                                    >
+                                                        {p.text}
+                                                    </a>
+                                                ) : (
+                                                    p.text
+                                                );
+                                            })}
+                                        </p>
+                                    );
+                                } else if (content.subtype === "list") {
+                                    return (
+                                        <ul key={generateUniqueId()}>
+                                            {content.subcontent.map((listElement) => {
+                                                const parts = extractLinks(listElement);
+
+                                                return (
+                                                    <li key={generateUniqueId()}>
+                                                        {parts.map((p) => {
+                                                            if (p.isLink) {
+                                                                linkId++;
+                                                            }
+                                                            return p.isLink ? (
+                                                                <a
+                                                                    key={generateUniqueId()}
+                                                                    href={blog.links[linkId]}
+                                                                    target="_blank"
+                                                                    className="link"
+                                                                >
+                                                                    {p.text}
+                                                                </a>
+                                                            ) : (
+                                                                p.text
+                                                            );
+                                                        })}
+                                                    </li>
+                                                );
+                                            })}
+                                        </ul>
+                                    );
+                                } else if (content.subtype === "image") {
+                                    return (
+                                        <figure key={generateUniqueId()}>
+                                            <img
+                                                src={content.src}
+                                                alt={content.alt}
+                                                width={content.width}
+                                                height={content.height}
+                                            />
+                                            <figcaption>{content.figcaption}</figcaption>
+                                        </figure>
+                                    );
+                                }
+                            })}
+                        </div>
+                    ) : (
+                        <h2 key={generateUniqueId()}>{element.content}</h2>
+                    );
+                })}
+
+                {blog.writer === "Julien" ? (
+                    <p className="sign">-Julien, {t("coFounder")}.</p>
+                ) : blog.writer === "Enzo" ? (
+                    <p className="sign">-Enzo, {t("coFounder")}.</p>
+                ) : (
+                    <p className="sign">-Julien & Enzo, {t("founders")}.</p>
+                )}
+            </div>
+
+            <div className="blogFooter">
+                <div>
+                    {isPreviousBlog && (
+                        <Link reloadDocument to={`/blog/${previousBlog.blog_id}`} className="previousBlogContainer">
+                            <i className="fa-solid fa-caret-left fa-xl"></i>
+                            <span className="previousBlog">{previousBlog.title}</span>
+                        </Link>
+                    )}
+
+                    {isNextBlog && (
+                        <Link reloadDocument to={`/blog/${nextBlog.blog_id}`} className="nextBlogContainer">
+                            <span className={`nextBlog ${!isNextBlog && "onlyOneBlog"}`}>{nextBlog.title}</span>
+                            <i className="fa-solid fa-caret-right fa-xl"></i>
+                        </Link>
+                    )}
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     );
 }
 
