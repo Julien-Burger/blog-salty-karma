@@ -1,34 +1,37 @@
 {
     "id": "uuidv4",
     "blogType": "Article || Devlog || News",
-    "title": "Titre du blog",
-    "description": "Courte description en ~300 caractères.",
+    "title": { "fr": "Titre du blog", "en": "" },
+    "description": { "fr": "Courte description en ~300 caractères.", "en": "" },
     "release_date": "JJ/MM/AAAA",
     "writer": "Julien",
-    "body": [
-        {
-            "type": "block",
-            "content": [
-                "Le contenu ici.",
-                "Si je veux intégrer des <link>liens</link>, j'utilise les balises adéquat.",
-                {
-                    "subtype": "list",
-                    "subcontent": ["Une liste avec des choses à dire !", "<link>Avec des liens.</link>"]
-                },
-                {
-                    "subtype": "image",
-                    "src": "",
-                    "alt": "",
-                    "width": "",
-                    "height": "",
-                    "figcaption": ""
-                }
-            ]
-        },
-        {
-            "type": "h2",
-            "content": "Titre de paragraphe."
-        }
-    ],
+    "body": {
+        "fr": [
+            {
+                "type": "block",
+                "content": [
+                    "Le contenu ici.",
+                    "Si je veux intégrer des <link>liens</link>, j'utilise les balises adéquat.",
+                    {
+                        "subtype": "list",
+                        "subcontent": ["Une liste avec des choses à dire !", "<link>Avec des liens.</link>"]
+                    },
+                    {
+                        "subtype": "image",
+                        "src": "",
+                        "alt": "",
+                        "width": "",
+                        "height": "",
+                        "figcaption": ""
+                    }
+                ]
+            },
+            {
+                "type": "h2",
+                "content": "Titre de paragraphe."
+            }
+        ],
+        "en": []
+    },
     "links": ["Les différents lien", "Dans l'ordre d'apparition des balises <link>"]
 }

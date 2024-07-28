@@ -10,7 +10,7 @@ import { useBlog } from "../../utils/hooks";
 function Blog() {
     const { id } = useParams();
     const { t, i18n } = useTranslation("blog");
-    const { blog, nextBlog, previousBlog, isPreviousBlog, isNextBlog } = useBlog(i18n.language, id);
+    const { blog, nextBlog, previousBlog, isPreviousBlog, isNextBlog } = useBlog(id);
     let linkId = -1;
 
     if (!blog) return;
@@ -27,7 +27,7 @@ function Blog() {
                     </Link>
                 </div>
 
-                <h1>{blog.title}</h1>
+                <h1>{blog.title[i18n.language]}</h1>
 
                 <div>
                     <span id={blog.release_date} className="date">
@@ -44,7 +44,7 @@ function Blog() {
             </div>
 
             <div className="blogBody">
-                {blog.body.map((element) => {
+                {blog.body[i18n.language].map((element) => {
                     return element.type === "block" ? (
                         <div className="block" key={generateUniqueId()}>
                             {element.content.map((content) => {
