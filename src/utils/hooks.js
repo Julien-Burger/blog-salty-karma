@@ -29,12 +29,33 @@ export const useOutsideClick = (ref, callback, dependencies = []) => {
 };
 
 /**
- * Get the current blog based on id and the next and previous blog
+ * Get the last 4 blogs of the current page index
+ */
+export const useBlogs = (pageIndex) => {
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        const getBlogs = async () => {
+            const {
+                data: { blogs },
+            } = await axios.get(API_ROUTES.GET_BLOGS);
+
+            setBlogs(blogs);
+        };
+
+        getBlogs();
+    }, []);
+
+    return blogs;
+};
+
+/**
+ * Get the current blog based on id
  * @param {string} lng Language of the displayed blog
  * @param {string} id
  * @returns The current blog, previous and next
  */
-export const useBlog = (lng, id) => {
+export const useBlog = (id) => {
     const [blogs, setBlogs] = useState({});
 
     useEffect(() => {

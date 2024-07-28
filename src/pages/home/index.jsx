@@ -5,20 +5,11 @@ import axios from "axios";
 import BlogCard from "../../components/blogCard";
 import { API_ROUTES } from "../../utils/api.routes";
 import "./style.scss";
+import { useBlogs } from "../../utils/hooks";
 
 function Home() {
     const { i18n } = useTranslation();
-    const [blogs, setBlogs] = useState([]);
-
-    useEffect(() => {
-        const getBlogs = async () => {
-            const {
-                data: { blogs },
-            } = await axios.get(API_ROUTES.GET_BLOGS);
-            setBlogs(blogs);
-        };
-        getBlogs();
-    }, []);
+    const blogs = useBlogs();
 
     if (blogs.length === 0) return;
 
@@ -40,8 +31,8 @@ function Home() {
                             type={blog.blog_type}
                             date={blog.release_date}
                             blogNumber={blog._id}
-                            title={blog.title}
-                            description={blog.description}
+                            title={blog.title[i18n.language]}
+                            description={blog.description[i18n.language]}
                         />
                     );
                 })}
