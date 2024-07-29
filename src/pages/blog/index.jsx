@@ -136,13 +136,13 @@ function Blog() {
                     {isPreviousBlog && (
                         <Link reloadDocument to={`/blog/${previousBlog.blog_id}`} className="previousBlogContainer">
                             <i className="fa-solid fa-caret-left fa-xl"></i>
-                            <span className="previousBlog">{previousBlog.title}</span>
+                            <span className="previousBlog">{previousBlog.title[i18n.language]}</span>
                         </Link>
                     )}
 
                     {isNextBlog && (
                         <Link reloadDocument to={`/blog/${nextBlog.blog_id}`} className="nextBlogContainer">
-                            <span className={`nextBlog ${!isNextBlog && "onlyOneBlog"}`}>{nextBlog.title}</span>
+                            <span className={`nextBlog ${!isNextBlog && "onlyOneBlog"}`}>{nextBlog.title[i18n.language]}</span>
                             <i className="fa-solid fa-caret-right fa-xl"></i>
                         </Link>
                     )}
